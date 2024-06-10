@@ -1,0 +1,43 @@
+$primary-color: #ffbf23;
+$xxl: 1224px;
+$xl: 1200px;
+$lg: 991px;
+$md: 768px;
+$sm: 556px;
+$xs: 400px;
+$xxs: 340px;
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.feature-img {
+  height: 35px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+}

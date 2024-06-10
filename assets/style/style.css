@@ -1,0 +1,494 @@
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.feature-img {
+  height: 35px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffbf23;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffbf23;
+}
+
+:root,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root .navbar,
+body .navbar {
+  position: relative;
+}
+:root .navbar .container-md,
+body .navbar .container-md {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  :root .navbar .container-md,
+  body .navbar .container-md {
+    top: 0;
+    background-color: #ffbf23;
+    color: white;
+    z-index: 11;
+  }
+}
+:root .navbar .container-md .logo,
+body .navbar .container-md .logo {
+  height: 70px;
+  width: 100%;
+}
+:root .navbar .container-md .navbar-nav .nav-item,
+body .navbar .container-md .navbar-nav .nav-item {
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  :root .navbar .container-md .navbar-nav .nav-item .nav-link,
+  body .navbar .container-md .navbar-nav .nav-item .nav-link {
+    text-align: center;
+  }
+}
+:root #banner,
+body #banner {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  :root #banner,
+  body #banner {
+    height: 100%;
+    margin: 75px 0;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  :root #banner,
+  body #banner {
+    flex-direction: column-reverse;
+  }
+}
+:root #banner h5,
+body #banner h5 {
+  margin: 50px 0 40px;
+  width: 335px;
+}
+:root #banner button,
+body #banner button {
+  background: black;
+  color: white;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+:root #banner button a,
+body #banner button a {
+  color: white;
+  text-decoration: none;
+}
+:root #banner button:hover,
+body #banner button:hover {
+  background-color: #ffbf23;
+}
+:root #banner .feature p,
+body #banner .feature p {
+  margin: 0;
+  font-size: 13px;
+  width: 88px;
+  line-height: 18px;
+}
+@media screen and (max-width: 400px) {
+  :root #banner .feature,
+  body #banner .feature {
+    width: 100%;
+    display: block !important;
+  }
+  :root #banner .feature p,
+  body #banner .feature p {
+    margin-top: 10px;
+  }
+}
+:root #banner .banner-img,
+body #banner .banner-img {
+  height: 550px;
+}
+@media screen and (max-width: 1200px) {
+  :root #banner .banner-img,
+  body #banner .banner-img {
+    height: 400px;
+    margin: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  :root #banner .banner-img,
+  body #banner .banner-img {
+    height: 300px;
+  }
+}
+:root .visionary,
+body .visionary {
+  position: relative;
+  background-color: #ffbf23;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  :root .visionary,
+  body .visionary {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 50px 0;
+  }
+}
+:root .visionary h1,
+body .visionary h1 {
+  width: 75%;
+  font-size: 60px;
+}
+@media screen and (max-width: 1200px) {
+  :root .visionary h1,
+  body .visionary h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+}
+:root .visionary h5,
+body .visionary h5 {
+  font-weight: 400;
+  line-height: 36px;
+  font-size: 36px;
+  text-align: justify;
+}
+@media screen and (max-width: 1200px) {
+  :root .visionary h5,
+  body .visionary h5 {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+:root .whatWeOffer,
+body .whatWeOffer {
+  margin-top: 90px;
+}
+:root .whatWeOffer .subTitle,
+body .whatWeOffer .subTitle {
+  width: 40%;
+  font-weight: 400;
+  font-size: 22px;
+}
+@media screen and (max-width: 768px) {
+  :root .whatWeOffer .subTitle,
+  body .whatWeOffer .subTitle {
+    width: 100%;
+  }
+}
+:root .whatWeOffer .offer-card,
+body .whatWeOffer .offer-card {
+  text-align: center;
+  margin: 40px auto 0;
+}
+:root .whatWeOffer .offer-card h5,
+body .whatWeOffer .offer-card h5 {
+  margin: 30px 0;
+}
+:root .whatWeOffer .offer-card p,
+body .whatWeOffer .offer-card p {
+  width: 350px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  :root .whatWeOffer .offer-card p,
+  body .whatWeOffer .offer-card p {
+    width: 250px;
+  }
+}
+:root .whatWeOffer .offer-card img,
+body .whatWeOffer .offer-card img {
+  width: 227px;
+  height: 301px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+:root .creatives,
+body .creatives {
+  margin-top: 100px;
+}
+:root .creatives .creatives-img,
+body .creatives .creatives-img {
+  height: 500px;
+  margin: 20px auto;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  :root .creatives .creatives-img,
+  body .creatives .creatives-img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 556px) {
+  :root .creatives .creatives-img,
+  body .creatives .creatives-img {
+    height: 300px;
+  }
+}
+:root .creatives .title,
+body .creatives .title {
+  width: 75%;
+}
+@media screen and (max-width: 991px) {
+  :root .creatives .title,
+  body .creatives .title {
+    width: 100%;
+  }
+}
+:root .creatives ol,
+body .creatives ol {
+  width: 75%;
+}
+@media screen and (max-width: 991px) {
+  :root .creatives ol,
+  body .creatives ol {
+    width: 100%;
+  }
+}
+:root .creatives .feature p,
+body .creatives .feature p {
+  margin: 0;
+  font-size: 13px;
+  width: 88px;
+  line-height: 18px;
+}
+@media screen and (max-width: 400px) {
+  :root .creatives .feature,
+  body .creatives .feature {
+    width: 100%;
+    display: block !important;
+  }
+  :root .creatives .feature p,
+  body .creatives .feature p {
+    margin-top: 10px;
+  }
+}
+:root .client .client-card,
+body .client .client-card {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 16px;
+  position: relative;
+}
+@media screen and (max-width: 400px) {
+  :root .client .client-card,
+  body .client .client-card {
+    width: 270px;
+  }
+  :root .client .client-card p,
+  body .client .client-card p {
+    width: 225px !important;
+  }
+}
+:root .client .client-card .dots,
+body .client .client-card .dots {
+  background-color: #ffbf23;
+  height: 34px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 2px solid black;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-left: 15px;
+}
+:root .client .client-card .dots span,
+body .client .client-card .dots span {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: black;
+  display: block;
+}
+:root .client .client-card p,
+body .client .client-card p {
+  width: 252px;
+  margin: 50px auto 0;
+  height: 300px;
+}
+:root .client .client-card img,
+body .client .client-card img {
+  position: absolute;
+  bottom: -2px;
+  left: -117px;
+  height: 114px;
+}
+:root .client .owl-nav,
+body .client .owl-nav {
+  position: absolute;
+  top: 32%;
+}
+:root .client .owl-nav button span,
+body .client .owl-nav button span {
+  font-size: 70px;
+}
+:root .client .owl-dots,
+body .client .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 50px;
+}
+:root .client .owl-dots button,
+body .client .owl-dots button {
+  height: 10px;
+  width: 10px;
+  background-color: gray;
+  border-radius: 50%;
+}
+:root .client .owl-dots button.active,
+body .client .owl-dots button.active {
+  background-color: #ffbf23;
+}
+:root .productivity,
+body .productivity {
+  position: relative;
+  height: 600px;
+}
+:root .productivity img,
+body .productivity img {
+  height: 800px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+@media screen and (max-width: 991px) {
+  :root .productivity img,
+  body .productivity img {
+    height: 600px;
+    top: 25%;
+    left: -44px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root .productivity img,
+  body .productivity img {
+    height: 550px;
+    top: 20%;
+    left: -26px;
+  }
+}
+@media screen and (max-width: 556px) {
+  :root .productivity img,
+  body .productivity img {
+    top: 50%;
+    left: -8px;
+    height: 300px;
+  }
+}
+:root footer,
+body footer {
+  background-color: #ffbf23;
+}
+@media screen and (max-width: 768px) {
+  :root footer,
+  body footer {
+    padding: 40px auto 0;
+  }
+}
+:root footer .main,
+body footer .main {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  :root footer .main,
+  body footer .main {
+    height: auto;
+  }
+}
+:root footer .main .logo,
+body footer .main .logo {
+  height: 50px;
+  border-radius: 10px;
+}
+:root footer .main .content,
+body footer .main .content {
+  margin-top: 17px;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+@media screen and (max-width: 556px) {
+  :root footer .main .content,
+  body footer .main .content {
+    width: 100%;
+  }
+}
+:root footer .main .address,
+body footer .main .address {
+  width: 200px;
+  margin: 0;
+}
+:root footer .main h5,
+body footer .main h5 {
+  font-size: 25px;
+}
+:root footer .main a,
+body footer .main a {
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+}
+:root footer .main i,
+body footer .main i {
+  font-size: 50px;
+}
+:root footer .sub,
+body footer .sub {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+:root footer .sub p,
+body footer .sub p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
